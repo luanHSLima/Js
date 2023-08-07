@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Horas</title>
 </head>
-<body>
+
+<body onload="">
     <header>
-        <h1>Hours of day</h1>
+        <h1>Verification of age</h1>
     </header>
 
-    <section>           
-        <div id="text"></div>
-        <div id="img"></div>
+    <section>
+        <div>
+            <p>Years of birth <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+        </div>
+
+        <h3>
+            Choose your gender
+        </h3>
+        <p>
+            <input type="radio" name="radsex" id="mas" checked>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+        </p>
+
+        <p>
+            <input onclick="verificar()" type="button" value="verificar">
+        </p>
+
+        <div id="res">
+        Preencha os dados acima para ver o resultado!
+        </div>
     </section>
 
     <footer>
@@ -22,4 +44,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

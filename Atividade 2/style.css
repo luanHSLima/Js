@@ -25,3 +25,11 @@ footer{
     font-size: 22px;
 
 }
+.redondo{
+    width: 400px;
+    border-radius: 50%;
+}
+#img{
+    width: 300px;
+    border-radius: 50%;
+}
